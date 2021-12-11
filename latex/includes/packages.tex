@@ -1,0 +1,52 @@
+% Accessibility packages for PDF/A-3u Compliance. These come first!
+\usepackage{colorprofiles}
+\usepackage[a-3u, mathxmp]{pdfx}
+\usepackage{mmap}
+
+% General packages in use
+\usepackage[factor=2000]{microtype}
+\usepackage{setspace}               % Used to change line and paragraph spacing
+\usepackage{csquotes}               \MakeOuterQuote{"}
+\usepackage[T1]{fontenc}            % Supports international fonts
+\usepackage[osf]{libertine}         % Beautiful libertine font
+\usepackage[parfill]{parskip}       % For empty lines between paragraphs
+\usepackage{hyperref}               % So citations can be links
+\usepackage[compact]{titlesec}      % Sets section titles to be more compact
+\usepackage{titling}                % In order to make the title higher on page
+\usepackage{xcolor}                 % To make URL links blue
+\usepackage{fancyhdr}               % For fancy headings
+\usepackage{lastpage}               % Gives us \lastpage
+\usepackage{lipsum}                 % For lorem lipsum placeholder text
+
+% Mathematical typesetting packages
+% \usepackage{amsmath}                % Needed for most math things.
+% \usepackage{amssymb}                % Additional mathematical symbols
+% \usepackage{amsthm}                 % For theorem and proof environments
+% \usepackage{tkz-euclide}            % Used for planar geometry (Euclidean)
+
+% Scientific graphics and plotting
+% \usepackage{tikz}                   % Used for graphical illustrations.
+% \usepackage{pgfplots}               % Used for scientific graphs and charts
+
+% Packages for typesetting code and pseudocode
+% In order to use minted, you must edit your makefile to -use-shell-escape!
+% \usepackage{minted}                 % Code highlighting: \begin{minted}{python}
+% \usepackage{algorithm}              % Float environment for pseudocode
+% \usepackage{algpseudocode}          % Typesetting library for pseudocode
+
+% Optional LaTeX packages for additional functionality
+% \usepackage[noframe]{showframe}     % Debug option to show margin frames.
+% \usepackage{float}                  % For arranging floats
+% \usepackage{graphicx}               % Required for embedding images
+% \usepackage{booktabs}               % For prettier tables
+% \usepackage{geometry}               % Sets more "reasonable" margin-sizes
+% \usepackage{xeCJK}                  % For typesetting CJK characters
+% \usepackage[l2tabu, orthodox]{nag}  % Verbose warnings for typesetting
+
+% The biblatex package should go last!
+% FYI: the biblatex package is used to generate a bibliography. However, unless
+% intense citation management (e.g. 5+ sources) is used, biblatex should not
+% be loaded, as it slows down the document compilation process by almost 2X.
+% In order to enable it, see sections/endpage.tex and essay-name.tex's preamble
+%
+% \usepackage[style=mla, backend=biber]{biblatex} % Nice MLA bibliography
