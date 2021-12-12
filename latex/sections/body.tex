@@ -234,13 +234,85 @@ You still have a set of symbols, and a corresponding interpretation. The only di
   \therefore \{\text{No Meaning}\} \Rightarrow I'(x) \Rightarrow \{\text{Meaning}\}
 \end{equation*}
 
-And likewise, you reply to your \textsc{Visitor}, slowly filling in the consequences of their demonstration -- we are talking about chess, a thing that exists -- in other words, a \emph{being}. Should being be defined as a set of symbols and a suitable interpretation, there likewise can be the case of being arising from none-being.
+"Not only that, but given something which has no meaning, there will always exist a suitable interpretation of it which can yield an arbitrary meaning of one's choice. For any string of random characters, there can be an interpretation that yields a riveting novella. Within any noise of radio static, there is a suitable interpretation that yields a lost concerto of Bach."
 
-\begin{align*}
-  \{\text{No Meaning}\} \Rightarrow &I'(x) \Rightarrow \{\text{Meaning}\} \\
-  \cong \{\text{No Being}\} \Rightarrow &I'(x) \Rightarrow \{\text{Being}\}
-\end{align*}
+But this is an absurdity! You protest. By stretching the nature of symbols and their interpretation to such an extreme, we risk losing meaning entirely. There has to be some paralogism in this chain of reasoning, or some illusion at hold. Otherwise, it seems that the very structure of being loses its shape. How can we affect an explanation?
 
-% \section{Deriving Something from Nothing}
+"We can try. For one, the absurdity of this conclusion comes an imbalance between the symbols and interpretation." The \textsc{Visitor sighs}. "We hollow out the symbols until there is nothing left within them, just as we simultaneously over-stuff the interpretation so that it does all the work. But yet, somehow meaning is conserved in the two parts as a whole -- it is merely distributed unevenly."
 
-You both ponder now, in silence. The office feels oddly chilly and strange. It seems quite reasonably absurd to state that something can come from nothing, or that there can be meaning from meaninglessness. But likewise, it is impossible now to resort to material appellations. After all, chess is not any particular arrangement of woodworking. Just like how being cannot be defined by the material cause. You feel a sense of \emph{aporia} set in, a contemplative puzzlement.
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    % Complete Rectangle #1
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDefPoint(0,3){C}
+    \tkzDefPoint(3,3){D}
+    \tkzDrawPolygon(A,B,D,C)
+    % Larger slice
+    \tkzDefPoint(0,2){E}
+    \tkzDefPoint(3,2){F}
+    % \tkzLabelPoints(E,F)
+    \tkzDrawPolygon(A,E,F,B)
+    % Midpoints
+    \tkzDefMidPoint(A,B) \tkzGetPoint{AB}
+    \tkzDefMidPoint(E,F) \tkzGetPoint{EF}
+    \tkzDefMidPoint(C,D) \tkzGetPoint{CD}
+    % Centers
+    \tkzDefMidPoint(AB,EF) \tkzGetPoint{BigCenter}
+    \tkzDefMidPoint(EF,CD) \tkzGetPoint{SmallCenter}
+    \tkzLabelPoint[align=center,anchor=center](BigCenter){Complex \\ Intepretation}
+    \tkzLabelPoint[align=center,anchor=center](SmallCenter){Simple \\ Symbols}
+    % \tkzDrawPoints(A,B,C,D)
+    \tkzDrawPolygon(A,B,D,C)
+    % \tkzLabelPoints(A,B,C,D)
+
+    % Complete Rectangle #2
+    \tkzDefPoint(4,0){A'}
+    \tkzDefPoint(7,0){B'}
+    \tkzDefPoint(4,3){C'}
+    \tkzDefPoint(7,3){D'}
+    \tkzDrawPolygon(A',B',D',C')
+    % Smaller slice
+    \tkzDefPoint(4,1){E'}
+    \tkzDefPoint(7,1){F'}
+    % \tkzLabelPoints(E',F')
+    \tkzDrawPolygon(A',E',F',B')
+    % Midpoints
+    \tkzDefMidPoint(A',B') \tkzGetPoint{AB'}
+    \tkzDefMidPoint(E',F') \tkzGetPoint{EF'}
+    \tkzDefMidPoint(C',D') \tkzGetPoint{CD'}
+    % Centers
+    \tkzDefMidPoint(AB',EF') \tkzGetPoint{BigCenter'}
+    \tkzDefMidPoint(EF',CD') \tkzGetPoint{SmallCenter'}
+    \tkzLabelPoint[align=center,anchor=center](BigCenter'){Simple \\ Intepretation}
+    \tkzLabelPoint[align=center,anchor=center](SmallCenter'){Complex \\ Symbols}
+    % \tkzDrawPoints(A,B,C,D)
+    \tkzDrawPolygon(A',B',D',C')
+    % \tkzLabelPoints(A',B',C',D')
+
+    % Equal Sign
+    \tkzDefMidPoint(B,A') \tkzGetPoint{Mid1}
+    \tkzDefMidPoint(D,C') \tkzGetPoint{Mid2}
+    \tkzDefMidPoint(Mid1,Mid2) \tkzGetPoint{Mid3}
+    \tkzLabelPoint[align=center,anchor=center](Mid3){$=$}
+  \end{tikzpicture}
+  \caption{Illustration of Meaning, as Symbols and Interpretation}
+  \label{fig:meaning}
+\end{figure}
+
+
+You nod. There's a similar meta-theorem in the study of Hilbert-style logic systems, you recall. Given a logical system with axioms, and rules of inference -- there is always some tenuous balance in play. You can either have a system that has few axioms, but many rules of inference. Or a system that has many axioms, but few rules of inference. It seems like a similar dynamic is at play here.
+
+But still, there is no reconciliation yet. If anything, all this goes to illustrate is that the conception of chess (or anything) as a set of symbols and an interpretation is an illusion. After all, meaning is still conserved -- no matter how you distribute the share of work between symbols and the interpretative function.
+
+% And likewise, you reply to your \textsc{Visitor}, slowly filling in the consequences of their demonstration -- we are talking about chess, a thing that exists -- in other words, a \emph{being}. Should being be defined as a set of symbols and a suitable interpretation, there likewise can be the case of being arising from none-being.
+%
+% \begin{align*}
+%   \{\text{No Meaning}\} \Rightarrow &I'(x) \Rightarrow \{\text{Meaning}\} \\
+%   \cong \{\text{No Being}\} \Rightarrow &I'(x) \Rightarrow \{\text{Being}\}
+% \end{align*}
+%
+% % \section{Deriving Something from Nothing}
+%
+% You both ponder now, in silence. The office feels oddly chilly and strange. It seems quite reasonably absurd to state that something can come from nothing, or that there can be meaning from meaninglessness. But likewise, it is impossible now to resort to material appellations. After all, chess is not any particular arrangement of woodworking. Just like how being cannot be defined by the material cause. You feel a sense of \emph{aporia} set in, a contemplative puzzlement.
