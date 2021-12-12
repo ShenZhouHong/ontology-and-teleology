@@ -33,6 +33,14 @@
 % Document Begins
 \begin{document}
 \maketitle
+
+\begin{center}
+  \newgame
+  \setchessboard{
+  showmover=false}
+  \chessboard
+\end{center}
+
 % \tableofcontents Optional table-of-contents
 % \clearpage clears page on table of contents so content starts on new page.
 
@@ -40,7 +48,6 @@
 % the content across multiple .tex files, and include them all here, e.g.
 % \input{sections/preamble.tex}
 \input{sections/body.tex}
-\clearpage
-\input{sections/endpage.tex}
+% \include{sections/endpage.tex}
 
 \end{document}

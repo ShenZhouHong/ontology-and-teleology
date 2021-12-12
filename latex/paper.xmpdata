@@ -1,18 +1,17 @@
 \Author{Shen Zhou Hong}
 \Title{
-  Default PDF Document Title (For PDF/A Compatibility)
+  Question on Ontology and Teleology
 }
 \Language{English}
-\Keywords{
-  keyword1\sep
-  keyword2\sep
-  keyword3
+\Keywords{Ontology\sep
+  Teleology\sep
+  Philosophy
 }
 \Publisher{Self-Published}
 \Subject{
-  Description of the PDF's subject
+  A short essay on a question in the intersection between ontology (being) and teleology (aim).
 }
-\Date{2021-11-23}
+\Date{2021-12-11}
 \PublicationType{pamphlet}
-\Source{https://github.com/ShenZhouHong/latex-essay}
-\URLlink{https://github.com/ShenZhouHong/latex-essay}
+\Source{https://github.com/ShenZhouHong/ontology-and-teleology}
+\URLlink{https://github.com/ShenZhouHong/ontology-and-teleology}
